@@ -1,0 +1,75 @@
+[gd_scene load_steps=2 format=3 uid="uid://6hyyjvsnsim1"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_hf4xg"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hf4xg")
+
+[node name="Set_time" type="Button" parent="."]
+layout_mode = 0
+offset_left = 367.0
+offset_top = 356.0
+offset_right = 781.0
+offset_bottom = 497.0
+text = "Set time"
+
+[node name="Hour" type="SpinBox" parent="."]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 288.0
+offset_right = 552.0
+offset_bottom = 349.0
+max_value = 23.0
+
+[node name="Minute" type="SpinBox" parent="."]
+layout_mode = 0
+offset_left = 592.0
+offset_top = 288.0
+offset_right = 688.0
+offset_bottom = 344.0
+max_value = 59.0
+
+[node name="Hour_Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 256.0
+offset_right = 544.0
+offset_bottom = 282.0
+text = "hour"
+
+[node name="Minute_label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 592.0
+offset_top = 256.0
+offset_right = 648.0
+offset_bottom = 282.0
+text = "Minute"
+
+[node name="Time_label" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -280.0
+offset_top = -196.0
+offset_right = 272.0
+offset_bottom = -60.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 61
+theme_override_font_sizes/normal_font_size = 87
+bbcode_enabled = true
+text = "[center][wave amp=50.0 freq=5.0] 0.00[/wave][/center]"
+fit_content = true
+autowrap_mode = 0
+
+[connection signal="pressed" from="Set_time" to="." method="_on_set_time_pressed"]
