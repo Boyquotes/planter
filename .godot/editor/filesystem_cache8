@@ -1,0 +1,7 @@
+2a60927148abd1d33b818b535e306557
+::res://::1686925040
+Global.gd::GDScript::-1::1686924184::0::1::::<>Node<>::
+icon.svg::CompressedTexture2D::7052883237580024064::1686925027::1686925085::1::::<><>::
+Label.gd::GDScript::-1::1686923549::0::1::::<>Control<>::
+main.gd::GDScript::-1::1686924255::0::1::::<>Control<>::
+test.tscn::PackedScene::2191805369924506162::1686924377::0::1::::<><>::res://main.gd
